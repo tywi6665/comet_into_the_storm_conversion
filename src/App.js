@@ -14,10 +14,9 @@ function App() {
     <Container>
       <Tabs>
         <TabList>
-          <Tab>Inflow</Tab>
-          <Tab>Rainbands</Tab>
-          <Tab>Eye & Eyewall</Tab>
-          <Tab>Outflow</Tab>
+          {data.data.map(d => (
+            <Tab key={d.tab}>{d.tab}</Tab>
+          ))}
         </TabList>
 
         <TabPanel>
