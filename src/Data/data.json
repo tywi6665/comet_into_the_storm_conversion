@@ -1,0 +1,32 @@
+{
+    "data": [
+        {
+            "tab": "Inflow",
+            "imgs": [],
+            "bullets": {
+                "img": []
+            }
+        },
+        {
+            "tab": "Rainbands",
+            "imgs": [],
+            "bullets": {
+                "img": []
+            }
+        },
+        {
+            "tab": "Eye & Eyewall",
+            "imgs": [],
+            "bullets": {
+                "img": []
+            }
+        },
+        {
+            "tab": "Outflow",
+            "imgs": [],
+            "bullets": {
+                "img": []
+            }
+        }
+    ]
+}

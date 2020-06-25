@@ -4,8 +4,12 @@ import { Tabs, TabList, TabPanel, Tab } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import './App.scss';
 import SubContainer from './Components/Containers/Subcontainer';
+const data = require("./Data/data.json");
 
 function App() {
+
+  console.log(data)
+
   return (
     <Container>
       <Tabs>
