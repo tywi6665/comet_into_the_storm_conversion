@@ -1,11 +1,23 @@
 import React from 'react';
 import './App.scss';
+import Container from './Components/Container';
+import { Tabs, TabList, TabPanel, Tab } from 'react-tabs';
 
 function App() {
   return (
-    <div className="App">
+    <Container>
+      <Tabs>
+        <TabList>
+          <Tab>Inflow</Tab>
+          <Tab>Rainbands</Tab>
+          <Tab>Eye & Eyewall</Tab>
+          <Tab>Outflow</Tab>
+        </TabList>
+        <TabPanel>
 
-    </div>
+        </TabPanel>
+      </Tabs>
+    </Container>
   );
 }
 
