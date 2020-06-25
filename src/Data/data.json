@@ -2,31 +2,51 @@
     "data": [
         {
             "tab": "Inflow",
-            "imgs": [],
-            "bullets": {
-                "img": []
-            }
+            "imgs": [
+                {
+                    "src": "",
+                    "bullet1": "Air rising, forming thunderstorms",
+                    "bullet2": "Warm humid air flows inward, speeding up as it approaches the eyewall",
+                    "bullet3": "Winds spiral in the eyewall"
+                }
+            ]
         },
         {
             "tab": "Rainbands",
-            "imgs": [],
-            "bullets": {
-                "img": []
-            }
+            "imgs": [
+                {
+                    "src": "",
+                    "bullet1": "Rainbands typically are 3-30 miles wide and up tp 300 miles long"
+                },
+                {
+                    "src": "",
+                    "bullet1": "Rainbands produce heavy rainfall, as much as 25 cm (10 in.) per hour",
+                    "bullet2": "RADAR image of a rainband"
+                }
+            ]
         },
         {
             "tab": "Eye & Eyewall",
-            "imgs": [],
-            "bullets": {
-                "img": []
-            }
+            "imgs": [
+                {
+                    "src": "",
+                    "bullet1": "Eye: Light winds, partly cloudy or clear skies. Average diameters 20-50 km",
+                    "bullet2": "Eyewall: Heaviest precipitation and strongest winds",
+                    "bullet3": "Spiraling winds in eyewall",
+                    "bullet4": "Sinking air"
+                }
+            ]
         },
         {
             "tab": "Outflow",
-            "imgs": [],
-            "bullets": {
-                "img": []
-            }
+            "imgs": [
+                {
+                    "src": "",
+                    "bullet1": "Air flowing out from the center of the storm (Outflow)",
+                    "bullet2": "Air sinking into storm center, warming and suppressing clouds. Winds are calm",
+                    "bullet3": "Cirrostratus clouds capping the storm"
+                }
+            ]
         }
     ]
 }
