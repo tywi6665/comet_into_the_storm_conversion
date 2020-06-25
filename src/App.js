@@ -1,7 +1,9 @@
 import React from 'react';
-import './App.scss';
-import Container from './Components/Container';
+import Container from './Components/Containers/Container';
 import { Tabs, TabList, TabPanel, Tab } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+import './App.scss';
+import SubContainer from './Components/Containers/Subcontainer';
 
 function App() {
   return (
@@ -13,8 +15,26 @@ function App() {
           <Tab>Eye & Eyewall</Tab>
           <Tab>Outflow</Tab>
         </TabList>
-        <TabPanel>
 
+        <TabPanel>
+          <SubContainer>
+            <p>Inflow</p>
+          </SubContainer>
+        </TabPanel>
+        <TabPanel>
+          <SubContainer>
+            <p>Rainbands</p>
+          </SubContainer>
+        </TabPanel>
+        <TabPanel>
+          <SubContainer>
+            <p>Eye & Eyewall</p>
+          </SubContainer>
+        </TabPanel>
+        <TabPanel>
+          <SubContainer>
+            <p>Outflow</p>
+          </SubContainer>
         </TabPanel>
       </Tabs>
     </Container>
