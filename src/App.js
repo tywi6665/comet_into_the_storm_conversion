@@ -11,36 +11,33 @@ function App() {
   console.log(data)
 
   return (
+
     <Container>
+
       <Tabs>
         <TabList>
           {data.data.map(d => (
             <Tab key={d.tab}>{d.tab}</Tab>
           ))}
         </TabList>
-
-        <TabPanel>
-          <SubContainer>
-            <p>Inflow</p>
-          </SubContainer>
-        </TabPanel>
-        <TabPanel>
-          <SubContainer>
-            <p>Rainbands</p>
-          </SubContainer>
-        </TabPanel>
-        <TabPanel>
-          <SubContainer>
-            <p>Eye & Eyewall</p>
-          </SubContainer>
-        </TabPanel>
-        <TabPanel>
-          <SubContainer>
-            <p>Outflow</p>
-          </SubContainer>
-        </TabPanel>
+        {data.data.map((d, i) => (
+          <TabPanel>
+            <SubContainer>
+              <p key={i}>{d.tab}</p>
+              {d.imgs.map((img, j) => (
+                <ol key={j}>
+                  {img.bullets.map((bullet, k) => (
+                    <li key={k}>{bullet}</li>
+                  ))}
+                </ol>
+              ))}
+            </SubContainer>
+          </TabPanel>
+        ))}
       </Tabs>
+
     </Container>
+
   );
 }
 
