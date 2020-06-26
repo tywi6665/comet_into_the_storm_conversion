@@ -4,6 +4,7 @@
             "tab": "Inflow",
             "imgs": [
                 {
+                    "id": 0,
                     "src": "",
                     "bullets": [
                         "Air rising, forming thunderstorms",
@@ -17,12 +18,14 @@
             "tab": "Rainbands",
             "imgs": [
                 {
+                    "id": 0,
                     "src": "",
                     "bullets": [
                         "Rainbands typically are 3-30 miles wide and up tp 300 miles long"
                     ]
                 },
                 {
+                    "id": 1,
                     "src": "",
                     "bullets": [
                         "Rainbands produce heavy rainfall, as much as 25 cm (10 in.) per hour",
@@ -35,6 +38,7 @@
             "tab": "Eye & Eyewall",
             "imgs": [
                 {
+                    "id": 0,
                     "src": "",
                     "bullets": [
                         "Eye: Light winds, partly cloudy or clear skies. Average diameters 20-50 km",
@@ -49,6 +53,7 @@
             "tab": "Outflow",
             "imgs": [
                 {
+                    "id": 0,
                     "src": "",
                     "bullets": [
                         "Air flowing out from the center of the storm (Outflow)",
