@@ -4,6 +4,7 @@ body {
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background: #fff;
   height: 100%;
@@ -16,4 +17,19 @@ body {
   .sub-container {
     padding: 15px;
   }   
+
+  .custom-tabs {
+    text-align: center;
+  }
+
+  .image-wrapper {
+    text-align: center;
+    margin: 15px;
+
+    img {
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
 }

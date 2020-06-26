@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const List = (tabData) => {
+const List = ({ tabData }) => {
 
     const [innerTab, setInnerTab] = useState(0)
 
@@ -8,7 +8,7 @@ const List = (tabData) => {
         <>
             <p key={"Header" + tabData.name}>{tabData.name}</p>
             <ol>
-                {tabData.tabData.bullets[innerTab].map((bullet, i) => (
+                {tabData.bullets[innerTab].map((bullet, i) => (
                     <li key={"Bullet" + tabData.name + i}>{bullet}</li>
                 ))}
             </ol>
