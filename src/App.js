@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Container from './Components/Containers/Container';
 import { Tabs, TabList, TabPanel, Tab } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
@@ -9,7 +9,8 @@ const data = require("./Data/data.json");
 
 function App() {
 
-  console.log(data)
+  const [currentTab, setCurrentTab] = useState(0)
+  const [currentInfo, setCurrentInfo] = useState([])
 
   return (
 
