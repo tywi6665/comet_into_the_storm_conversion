@@ -8,9 +8,9 @@ const Outflow = ({ setCurrentPage }) => {
             <h3>Outflow</h3>
             <ImageWrapper />
             <ol>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Air flowing out from the center of the storm (Outflow)</li>
+                <li>Air sinking into storm center, warming and suppressing clouds. Winds are calm</li>
+                <li>Cirrostratus clouds capping the storm</li>
             </ol>
             <p onClick={e => setCurrentPage("Main")}>Back to Menu</p>
         </SubContainer>

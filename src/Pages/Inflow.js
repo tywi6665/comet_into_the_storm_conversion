@@ -8,9 +8,9 @@ const Inflow = ({ setCurrentPage }) => {
             <h3>Inflow</h3>
             <ImageWrapper />
             <ol>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Air rising, forming thunderstorms</li>
+                <li>Warm humid air flows inward, speeding up as it approaches the eyewall</li>
+                <li>Winds spiral in the eyewall</li>
             </ol>
             <p onClick={e => setCurrentPage("Main")}>Back to Menu</p>
         </SubContainer>

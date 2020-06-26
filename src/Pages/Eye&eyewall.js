@@ -8,9 +8,10 @@ const Eye_Eyewall = ({ setCurrentPage }) => {
             <h3>Eye & Eyewall</h3>
             <ImageWrapper />
             <ol>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Eye: Light winds, partly cloudy or clear skies. Average diameters 20-50 km</li>
+                <li>Eyewall: Heaviest precipitation and strongest winds</li>
+                <li>Spiraling winds in eyewall</li>
+                <li>Sinking air</li>
             </ol>
             <p onClick={e => setCurrentPage("Main")}>Back to Menu</p>
         </SubContainer>
