@@ -16,10 +16,27 @@ body {
 
   .sub-container {
     padding: 15px;
+
+    .menu-list {
+      display: flex;
+      justify-content: space-evenly;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;  
+      text-align: center;    
+
+      li {
+        display: inline-block;
+        margin: 5px 7px;
+        font-weight: bold;
+        border-bottom: 1px solid black;
+      }
+    }
+
   }   
 
-  .custom-tabs {
-    text-align: center;
+  .clickable {
+    cursor: pointer;
   }
 
   .image-wrapper {

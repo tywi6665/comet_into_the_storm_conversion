@@ -12,7 +12,11 @@ const Outflow = ({ setCurrentPage }) => {
                 <li>Air sinking into storm center, warming and suppressing clouds. Winds are calm</li>
                 <li>Cirrostratus clouds capping the storm</li>
             </ol>
-            <p onClick={e => setCurrentPage("Main")}>Back to Menu</p>
+            <p
+                className="clickable"
+                onClick={e => setCurrentPage("Main")}
+            >
+                Back to Menu</p>
         </SubContainer>
     );
 }

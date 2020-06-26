@@ -13,7 +13,11 @@ const Eye_Eyewall = ({ setCurrentPage }) => {
                 <li>Spiraling winds in eyewall</li>
                 <li>Sinking air</li>
             </ol>
-            <p onClick={e => setCurrentPage("Main")}>Back to Menu</p>
+            <p
+                className="clickable"
+                onClick={e => setCurrentPage("Main")}
+            >
+                Back to Menu</p>
         </SubContainer>
     );
 }

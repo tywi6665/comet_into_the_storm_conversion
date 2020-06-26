@@ -12,7 +12,11 @@ const Inflow = ({ setCurrentPage }) => {
                 <li>Warm humid air flows inward, speeding up as it approaches the eyewall</li>
                 <li>Winds spiral in the eyewall</li>
             </ol>
-            <p onClick={e => setCurrentPage("Main")}>Back to Menu</p>
+            <p
+                className="clickable"
+                onClick={e => setCurrentPage("Main")}
+            >
+                Back to Menu</p>
         </SubContainer>
     );
 }

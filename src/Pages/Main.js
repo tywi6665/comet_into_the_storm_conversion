@@ -9,11 +9,11 @@ const Main = ({ setCurrentPage }) => {
             <ImageWrapper
                 src={"screenshot"}
             />
-            <ul>
-                <li onClick={e => setCurrentPage("Inflow")}>Inflow</li>
-                <li onClick={e => setCurrentPage("Rainbands")}>Rainbands</li>
-                <li onClick={e => setCurrentPage("Eye&eyewall")}>Eye & Eyewall</li>
-                <li onClick={e => setCurrentPage("Outflow")}>Outflow</li>
+            <ul className="menu-list">
+                <li className="clickable" onClick={e => setCurrentPage("Inflow")}>Inflow</li>
+                <li className="clickable" onClick={e => setCurrentPage("Rainbands")}>Rainbands</li>
+                <li className="clickable" onClick={e => setCurrentPage("Eye&eyewall")}>Eye & Eyewall</li>
+                <li className="clickable" onClick={e => setCurrentPage("Outflow")}>Outflow</li>
             </ul>
         </SubContainer>
     );
