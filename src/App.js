@@ -6,8 +6,11 @@ import './App.scss';
 import SubContainer from './Components/Containers/Subcontainer';
 import List from './Components/List';
 const data = require("./Data/data.json");
+const newData = require("./Data/data2.json");
 
 function App() {
+
+  console.log(newData)
 
   const [currentTab, setCurrentTab] = useState(0)
   const [currentInfo, setCurrentInfo] = useState([])
@@ -36,6 +39,24 @@ function App() {
               {/* <List
                 tabData={d.imgs}
               /> */}
+            </SubContainer>
+          </TabPanel>
+        ))}
+      </Tabs>
+
+      <Tabs>
+        <TabList>
+          {newData.tabs.map(tab => (
+            <Tab key={"Tab" + tab.name}>{tab.name}</Tab>
+          ))}
+        </TabList>
+        {newData.tabs.map(tab => (
+          <TabPanel key={"TabPanel" + tab.name}>
+            <SubContainer key={"SubContainer" + tab.name}>
+              <List
+                key={"List" + tab.name}
+                tabData={tab}
+              />
             </SubContainer>
           </TabPanel>
         ))}
