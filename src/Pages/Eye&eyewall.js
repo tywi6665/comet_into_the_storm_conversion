@@ -2,7 +2,7 @@ import React from 'react';
 import SubContainer from '../Components/Containers/Subcontainer';
 import ImageWrapper from '../Components/ImageWrapper';
 
-const Eye_Eyewall = () => {
+const Eye_Eyewall = ({ setCurrentPage }) => {
     return (
         <SubContainer>
             <h3>Eye & Eyewall</h3>
@@ -12,6 +12,7 @@ const Eye_Eyewall = () => {
                 <li></li>
                 <li></li>
             </ol>
+            <p onClick={e => setCurrentPage("Main")}>Back to Menu</p>
         </SubContainer>
     );
 }

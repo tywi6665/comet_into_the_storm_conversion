@@ -2,7 +2,7 @@ import React from 'react';
 import SubContainer from '../Components/Containers/Subcontainer';
 import ImageWrapper from '../Components/ImageWrapper';
 
-const Rainbands = () => {
+const Rainbands = ({ setCurrentPage }) => {
     return (
         <SubContainer>
             <h3>Rainbands</h3>
@@ -12,6 +12,7 @@ const Rainbands = () => {
                 <li></li>
                 <li></li>
             </ol>
+            <p onClick={e => setCurrentPage("Main")}>Back to Menu</p>
         </SubContainer>
     );
 }

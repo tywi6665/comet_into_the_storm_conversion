@@ -17,21 +17,21 @@ function App() {
 
   const [currentPage, setCurrentPage] = useState("Main")
   // useEffect(() => {
-  //   handleCurrentPage(currentPage)
+  //   renderCurrentPage(currentPage)
   // }, [currentPage])
 
-  const handleCurrentPage = (page) => {
+  const renderCurrentPage = (page) => {
     let renderedPage;
     if (page === "Main") {
-      renderedPage = <Main />
+      renderedPage = <Main setCurrentPage={setCurrentPage} />
     } else if (page === "Inflow") {
-      renderedPage = <Inflow />
+      renderedPage = <Inflow setCurrentPage={setCurrentPage} />
     } else if (page === "Rainbands") {
-      renderedPage = <Rainbands />
+      renderedPage = <Rainbands setCurrentPage={setCurrentPage} />
     } else if (page === "Eye&eyewall") {
-      renderedPage = <Eye_Eyewall />
+      renderedPage = <Eye_Eyewall setCurrentPage={setCurrentPage} />
     } else if (page === "Outflow") {
-      renderedPage = <Outflow />
+      renderedPage = <Outflow setCurrentPage={setCurrentPage} />
     }
     return renderedPage
   }
@@ -39,7 +39,7 @@ function App() {
   return (
 
     <Container>
-      {handleCurrentPage(currentPage)}
+      {renderCurrentPage(currentPage)}
       {/* <h1>Inside the storm</h1>
       <ImageWrapper
         src={"screenshot"}
