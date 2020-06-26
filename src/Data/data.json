@@ -1,66 +1,50 @@
 {
-    "data": [
+    "tabs": [
         {
-            "tab": "Inflow",
-            "imgs": [
-                {
-                    "id": 0,
-                    "src": "",
-                    "bullets": [
-                        "Air rising, forming thunderstorms",
-                        "Warm humid air flows inward, speeding up as it approaches the eyewall",
-                        "Winds spiral in the eyewall"
-                    ]
-                }
+            "name": "Inflow",
+            "imgs": [],
+            "bullets": [
+                [
+                    "Air rising, forming thunderstorms",
+                    "Warm humid air flows inward, speeding up as it approaches the eyewall",
+                    "Winds spiral in the eyewall"
+                ]
             ]
         },
         {
-            "tab": "Rainbands",
-            "imgs": [
-                {
-                    "id": 0,
-                    "src": "",
-                    "bullets": [
-                        "Rainbands typically are 3-30 miles wide and up tp 300 miles long"
-                    ]
-                },
-                {
-                    "id": 1,
-                    "src": "",
-                    "bullets": [
-                        "Rainbands produce heavy rainfall, as much as 25 cm (10 in.) per hour",
-                        "RADAR image of a rainband"
-                    ]
-                }
+            "name": "Rainbands",
+            "imgs": [],
+            "bullets": [
+                [
+                    "Rainbands typically are 3-30 miles wide and up tp 300 miles long"
+                ],
+                [
+                    "Rainbands produce heavy rainfall, as much as 25 cm (10 in.) per hour",
+                    "RADAR image of a rainband"
+                ]
             ]
         },
         {
-            "tab": "Eye & Eyewall",
-            "imgs": [
-                {
-                    "id": 0,
-                    "src": "",
-                    "bullets": [
-                        "Eye: Light winds, partly cloudy or clear skies. Average diameters 20-50 km",
-                        "Eyewall: Heaviest precipitation and strongest winds",
-                        "Spiraling winds in eyewall",
-                        "Sinking air"
-                    ]
-                }
+            "name": "Eye & Eyewall",
+            "imgs": [],
+            "bullets": [
+                [
+                    "Eye: Light winds, partly cloudy or clear skies. Average diameters 20-50 km",
+                    "Eyewall: Heaviest precipitation and strongest winds",
+                    "Spiraling winds in eyewall",
+                    "Sinking air"
+                ]
             ]
         },
         {
-            "tab": "Outflow",
-            "imgs": [
-                {
-                    "id": 0,
-                    "src": "",
-                    "bullets": [
-                        "Air flowing out from the center of the storm (Outflow)",
-                        "Air sinking into storm center, warming and suppressing clouds. Winds are calm",
-                        "Cirrostratus clouds capping the storm"
-                    ]
-                }
+            "name": "Outflow",
+            "imgs": [],
+            "bullets": [
+                [
+                    "Air flowing out from the center of the storm (Outflow)",
+                    "Air sinking into storm center, warming and suppressing clouds. Winds are calm",
+                    "Cirrostratus clouds capping the storm"
+                ]
             ]
         }
     ]

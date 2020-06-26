@@ -1,16 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const List = (tabData) => {
 
     const [innerTab, setInnerTab] = useState(0)
-    console.log(tabData)
 
     return (
         <>
             <p key={"Header" + tabData.name}>{tabData.name}</p>
             <ol>
-                {tabData.tabData.bullets[innerTab].map(bullet => (
-                    <li>{bullet}</li>
+                {tabData.tabData.bullets[innerTab].map((bullet, i) => (
+                    <li key={"Bullet" + tabData.name + i}>{bullet}</li>
                 ))}
             </ol>
         </>
