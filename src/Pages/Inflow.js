@@ -7,7 +7,11 @@ const Inflow = ({ setCurrentPage }) => {
     const [sliderValue, setSliderValue] = useState(0)
 
     const handleOnChange = (e) => {
-        setSliderValue(e.target.value)
+        if (e.target.getAttribute("data-arrow") === "up" && sliderValue < 5) {
+            setSliderValue(sliderValue + 1)
+        } else if (e.target.getAttribute("data-arrow") === "down" && sliderValue > 0) {
+            setSliderValue(sliderValue - 1)
+        } else { }
     }
 
     return (
@@ -15,11 +19,11 @@ const Inflow = ({ setCurrentPage }) => {
             <h3>Inflow</h3>
             <div className="inflow-image-wrapper">
                 <ImageWrapper />
-                <div className="input-wrapper">
-                    <i className="arrow up"></i>
-                    <input type="range" orient="vertical" value={sliderValue} min="0" max="5" onChange={(e) => handleOnChange(e)} />
-                    <i className="arrow down"></i>
-                </div>
+                <form className="input-wrapper">
+                    <i className="arrow up" data-arrow="up" onClick={(e) => handleOnChange(e)}></i>
+                    <input id="slider" type="range" orient="vertical" value={sliderValue} min="0" max="5" onChange={(e) => setSliderValue(e.target.value)} />
+                    <i className="arrow down" data-arrow="down" onClick={(e) => handleOnChange(e)}></i>
+                </form>
             </div>
             <ol>
                 <li>Air rising, forming thunderstorms</li>
