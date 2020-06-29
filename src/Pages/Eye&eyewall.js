@@ -10,6 +10,13 @@ const Eye_Eyewall = ({ setCurrentPage }) => {
         <SubContainer>
             <h3>Eye & Eyewall</h3>
             <ImageWrapper />
+            <div>
+                <p
+                    className="clickable"
+                    onClick={() => setIsToggled(!isToggled)}
+                >
+                    {!isToggled ? ("Wire Frame Image") : ("Solid Image")} </p>
+            </div>
             <ol>
                 <li>Eye: Light winds, partly cloudy or clear skies. Average diameters 20-50 km</li>
                 <li>Eyewall: Heaviest precipitation and strongest winds</li>

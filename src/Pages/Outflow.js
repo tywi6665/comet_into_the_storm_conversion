@@ -10,6 +10,13 @@ const Outflow = ({ setCurrentPage }) => {
         <SubContainer>
             <h3>Outflow</h3>
             <ImageWrapper />
+            <div>
+                <p
+                    className="clickable"
+                    onClick={() => setIsToggled(!isToggled)}
+                >
+                    {!isToggled ? ("Wire Frame Image") : ("Solid Image")} </p>
+            </div>
             <ol>
                 <li>Air flowing out from the center of the storm (Outflow)</li>
                 <li>Air sinking into storm center, warming and suppressing clouds. Winds are calm</li>
