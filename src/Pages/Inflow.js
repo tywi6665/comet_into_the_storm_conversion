@@ -21,9 +21,10 @@ const Inflow = ({ setCurrentPage }) => {
                 <ImageWrapper />
                 <form className="input-wrapper">
                     <i className="arrow up" data-arrow="up" onClick={(e) => handleOnChange(e)}></i>
-                    <input id="slider" type="range" orient="vertical" value={sliderValue} min="0" max="5" onChange={(e) => setSliderValue(e.target.value)} />
+                    <input id="slider" type="range" name="slider" orient="vertical" value={sliderValue} min="0" max="5" onChange={(e) => setSliderValue(e.target.value)} />
                     <i className="arrow down" data-arrow="down" onClick={(e) => handleOnChange(e)}></i>
                 </form>
+                <label name="slider-label" htmlFor="slider">Camera Height</label>
             </div>
             <ol>
                 <li>Air rising, forming thunderstorms</li>

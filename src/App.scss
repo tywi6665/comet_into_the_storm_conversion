@@ -8,7 +8,8 @@ body {
   justify-content: center;
   background: #fff;
   height: 100%;
-  width: fit-content;
+  width: 550px;
+  // max-width: 550px;
   margin: 50px auto;
   padding: 15px;
   border: 1px solid #000000;
@@ -41,23 +42,56 @@ body {
         .up {
           transform: rotate(-135deg);
           -webkit-transform: rotate(-135deg);
+          -moz-transform: rotate(-135deg);
+
+          // &:hover {
+          //   animation: arrow-up ease-in-out 2s infinite;
+          // }
+
+          // @keyframes arrow-up {
+          //   from {
+          //     transform: rotate(-135deg);
+          // -webkit-transform: rotate(-135deg0);
+          // -moz-transform: rotate(-135deg);
+          //     transform: translateY(0);
+          //     -webkit-transform: translateY(0);
+          //     -moz-transform: translateY(0);
+          //   } to {
+          //     transform: rotate(-135deg);
+          // -webkit-transform: rotate(-135deg);
+          // -moz-transform: rotate(-135deg);
+          //     transform: translateY(-15px);
+          //     -webkit-transform: translateY(-15px);
+          //     -moz-transform: translateY(-15px);
+          //   }
+          // }
+
+          // &:after {
+            
+          // }
         }
         
         .down {
           transform: rotate(45deg);
           -webkit-transform: rotate(45deg);
-        }
-
+          -moz-transform: rotate(45deg);
+        } 
+        
         input[type=range][orient=vertical] {
-        writing-mode: bt-lr; /* IE */
-        -webkit-appearance: slider-vertical; /* WebKit */
-        width: 8px;
-        height: 175px;
-        padding: 0 5px;
-        }
-      }
+            writing-mode: bt-lr; /* IE */
+            -webkit-appearance: slider-vertical; /* WebKit */
+            width: 8px;
+            height: 175px;
+            padding: 0 5px;
+        } 
 
+             
+      } 
       
+      label {        
+        writing-mode: vertical-rl;
+        text-orientation: mixed;       
+      }   
     }
 
     .menu-list {
