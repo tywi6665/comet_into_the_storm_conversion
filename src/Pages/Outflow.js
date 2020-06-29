@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SubContainer from '../Components/Containers/Subcontainer';
 import ImageWrapper from '../Components/ImageWrapper';
 
 const Outflow = ({ setCurrentPage }) => {
+
+    const [isToggled, setIsToggled] = useState(false)
+
     return (
         <SubContainer>
             <h3>Outflow</h3>
