@@ -17,6 +17,20 @@ body {
   .sub-container {
     padding: 15px;
 
+    .inflow-image-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      input[type=range][orient=vertical] {
+        writing-mode: bt-lr; /* IE */
+        -webkit-appearance: slider-vertical; /* WebKit */
+        width: 8px;
+        height: 175px;
+        padding: 0 5px;
+      }
+    }
+
     .menu-list {
       display: flex;
       justify-content: space-evenly;
@@ -42,11 +56,18 @@ body {
   .image-wrapper {
     text-align: center;
     margin: 15px;
+    border: 1px solid black;
+
+    width: 450px;
+      height: 220px;  
 
     img {
-      width: auto;
-      height: auto;
-      margin: 0 auto;
+      // width: auto;
+      // height: auto;
+      margin: 0 auto;  
+
+      width: 450px;
+      height: 220px;   
     }
   }
 }

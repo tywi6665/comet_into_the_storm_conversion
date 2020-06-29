@@ -6,7 +6,10 @@ const Inflow = ({ setCurrentPage }) => {
     return (
         <SubContainer>
             <h3>Inflow</h3>
-            <ImageWrapper />
+            <div className="inflow-image-wrapper">
+                <ImageWrapper />
+                <input type="range" orient="vertical" />
+            </div>
             <ol>
                 <li>Air rising, forming thunderstorms</li>
                 <li>Warm humid air flows inward, speeding up as it approaches the eyewall</li>
