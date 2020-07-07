@@ -9,7 +9,9 @@ const Rainbands = ({ setCurrentPage }) => {
     return (
         <SubContainer>
             <h3>Rainbands</h3>
-            <ImageWrapper />
+            <ImageWrapper
+                src={!isToggled ? ("rainband_1") : ("rainband_2")}
+            />
             {!isToggled ? (
                 <div>
                     <p

@@ -9,7 +9,9 @@ const Outflow = ({ setCurrentPage }) => {
     return (
         <SubContainer>
             <h3>Outflow</h3>
-            <ImageWrapper />
+            <ImageWrapper
+                src={!isToggled ? ("outflow_1") : ("outflow_2")}
+            />
             <div>
                 <p
                     className="clickable"

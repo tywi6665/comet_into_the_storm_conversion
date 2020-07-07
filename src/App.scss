@@ -122,6 +122,24 @@ body {
 
   .clickable {
     cursor: pointer;
+    width: fit-content;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+    background: #555;
+    color: #fff;
+    border: 2px solid #555;
+    border-radius: 2.5em;
+    transition: 0.2s ease-in-out all;
+    box-shadow: none;
+    text-shadow: none;
+    text-align: center;
+    padding: 8px 16px;
+    margin: 10px 0;
+
+    &:hover {
+      background-color: #333;
+      border-color: #333;
+    }
+    
   }
 
   .image-wrapper {

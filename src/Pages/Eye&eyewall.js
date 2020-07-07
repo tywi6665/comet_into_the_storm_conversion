@@ -9,7 +9,9 @@ const Eye_Eyewall = ({ setCurrentPage }) => {
     return (
         <SubContainer>
             <h3>Eye & Eyewall</h3>
-            <ImageWrapper />
+            <ImageWrapper
+                src={!isToggled ? ("eyewall_1") : ("eyewall_2")}
+            />
             <div>
                 <p
                     className="clickable"
