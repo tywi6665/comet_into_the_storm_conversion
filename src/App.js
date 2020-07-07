@@ -40,30 +40,6 @@ function App() {
 
     <Container>
       {renderCurrentPage(currentPage)}
-      {/* <h1>Inside the storm</h1>
-      <ImageWrapper
-        src={"screenshot"}
-      />
-      <Tabs direction={'rtl'}>
-        <TabList
-          className="custom-tabs react-tabs__tab-list"
-        >
-          {data.tabs.map(tab => (
-            <Tab key={"Tab" + tab.name}>{tab.name}</Tab>
-          ))}
-        </TabList>
-        {data.tabs.map(tab => (
-          <TabPanel key={"TabPanel" + tab.name}>
-            <SubContainer key={"SubContainer" + tab.name}>
-              <List
-                key={"List" + tab.name}
-                tabData={tab}
-              />
-            </SubContainer>
-          </TabPanel>
-        ))}
-      </Tabs> */}
-
     </Container>
 
   );

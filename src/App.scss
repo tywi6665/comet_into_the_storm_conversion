@@ -17,6 +17,14 @@ body {
 
   .sub-container {
     padding: 15px;
+    
+    h1 {
+      margin: 0;
+    } 
+
+    h3 {
+      margin: 10px 0;
+    }
 
     .inflow-image-wrapper {
       display: flex;
@@ -119,18 +127,11 @@ body {
   .image-wrapper {
     text-align: center;
     margin: 15px;
-    border: 1px solid black;
-
-    width: 450px;
-      height: 220px;  
 
     img {
-      // width: auto;
-      // height: auto;
+      width: auto;
+      height: auto;
       margin: 0 auto;  
-
-      width: 450px;
-      height: 220px;   
     }
   }
 }

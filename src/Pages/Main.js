@@ -5,9 +5,8 @@ import ImageWrapper from "../Components/ImageWrapper";
 const Main = ({ setCurrentPage }) => {
     return (
         <SubContainer>
-            <h1>Inside the storm</h1>
             <ImageWrapper
-                src={"screenshot"}
+                src={"mainmenu"}
             />
             <ul className="menu-list">
                 <li className="clickable" onClick={e => setCurrentPage("Inflow")}>Inflow</li>
