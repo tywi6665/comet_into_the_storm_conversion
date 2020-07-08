@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/comet_into_the_storm_conversion/static/css/main.e3bf5aa6.chunk.css",
+    "main.js": "/comet_into_the_storm_conversion/static/js/main.16752b7c.chunk.js",
+    "main.js.map": "/comet_into_the_storm_conversion/static/js/main.16752b7c.chunk.js.map",
+    "runtime-main.js": "/comet_into_the_storm_conversion/static/js/runtime-main.5339c5fc.js",
+    "runtime-main.js.map": "/comet_into_the_storm_conversion/static/js/runtime-main.5339c5fc.js.map",
+    "static/css/2.5c17b9f1.chunk.css": "/comet_into_the_storm_conversion/static/css/2.5c17b9f1.chunk.css",
+    "static/js/2.b5296898.chunk.js": "/comet_into_the_storm_conversion/static/js/2.b5296898.chunk.js",
+    "static/js/2.b5296898.chunk.js.map": "/comet_into_the_storm_conversion/static/js/2.b5296898.chunk.js.map",
+    "index.html": "/comet_into_the_storm_conversion/index.html",
+    "precache-manifest.c79dca997ea15272fd4b865f5096dbcd.js": "/comet_into_the_storm_conversion/precache-manifest.c79dca997ea15272fd4b865f5096dbcd.js",
+    "service-worker.js": "/comet_into_the_storm_conversion/service-worker.js",
+    "static/css/2.5c17b9f1.chunk.css.map": "/comet_into_the_storm_conversion/static/css/2.5c17b9f1.chunk.css.map",
+    "static/css/main.e3bf5aa6.chunk.css.map": "/comet_into_the_storm_conversion/static/css/main.e3bf5aa6.chunk.css.map",
+    "static/js/2.b5296898.chunk.js.LICENSE.txt": "/comet_into_the_storm_conversion/static/js/2.b5296898.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5339c5fc.js",
+    "static/css/2.5c17b9f1.chunk.css",
+    "static/js/2.b5296898.chunk.js",
+    "static/css/main.e3bf5aa6.chunk.css",
+    "static/js/main.16752b7c.chunk.js"
+  ]
+}
