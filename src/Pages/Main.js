@@ -20,8 +20,8 @@ const Main = ({ setCurrentPage }) => {
                 />
                 <div className="overlay">
                     {hover ? (
-                        hover.map(overlay => (
-                            <div className={`${overlay} circle`}></div>
+                        hover.map((overlay, i) => (
+                            <div className={`${overlay} circle`} key={i}></div>
                         ))
                     ) : (null)}
                 </div>
