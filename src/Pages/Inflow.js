@@ -49,7 +49,7 @@ const Inflow = ({ setCurrentPage }) => {
                         </div>
                     )
             ) : (null)}
-            <ol>
+            <ol className="info-list">
                 <li>Air rising, forming thunderstorms</li>
                 <li>Warm humid air flows inward, speeding up as it approaches the eyewall</li>
                 <li>Winds spiral in the eyewall</li>

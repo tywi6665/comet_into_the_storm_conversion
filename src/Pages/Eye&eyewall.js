@@ -19,7 +19,7 @@ const Eye_Eyewall = ({ setCurrentPage }) => {
                 >
                     {!isToggled ? ("Wire Frame Image") : ("Solid Image")} </p>
             </div>
-            <ol>
+            <ol className="info-list">
                 <li>Eye: Light winds, partly cloudy or clear skies. Average diameters 20-50 km</li>
                 <li>Eyewall: Heaviest precipitation and strongest winds</li>
                 <li>Spiraling winds in eyewall</li>

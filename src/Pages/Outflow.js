@@ -19,7 +19,7 @@ const Outflow = ({ setCurrentPage }) => {
                 >
                     {!isToggled ? ("Wire Frame Image") : ("Solid Image")} </p>
             </div>
-            <ol>
+            <ol className="info-list">
                 <li>Air flowing out from the center of the storm (Outflow)</li>
                 <li>Air sinking into storm center, warming and suppressing clouds. Winds are calm</li>
                 <li>Cirrostratus clouds capping the storm</li>
