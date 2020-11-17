@@ -17,10 +17,10 @@ body {
 
   .sub-container {
     padding: 15px;
-    
+
     h1 {
       margin: 0;
-    } 
+    }
 
     h3 {
       margin: 10px 0;
@@ -77,7 +77,8 @@ body {
           from {
             transform: scale(1);
             opacity: 1;
-          } to {
+          }
+          to {
             transform: scale(2);
             opacity: 0.25;
           }
@@ -159,6 +160,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      // position: relative;
 
       .input-wrapper {
         display: flex;
@@ -204,31 +206,29 @@ body {
           // }
 
           // &:after {
-            
+
           // }
         }
-        
+
         .down {
           transform: rotate(45deg);
           -webkit-transform: rotate(45deg);
           -moz-transform: rotate(45deg);
-        } 
-        
-        input[type=range][orient=vertical] {
-            writing-mode: bt-lr; /* IE */
-            -webkit-appearance: slider-vertical; /* WebKit */
-            width: 8px;
-            height: 175px;
-            padding: 0 5px;
-        } 
+        }
 
-             
-      } 
-      
-      label {        
+        input[type="range"][orient="vertical"] {
+          writing-mode: bt-lr; /* IE */
+          -webkit-appearance: slider-vertical; /* WebKit */
+          width: 8px;
+          height: 175px;
+          padding: 0 5px;
+        }
+      }
+
+      label {
         writing-mode: vertical-rl;
-        text-orientation: mixed;       
-      }   
+        text-orientation: mixed;
+      }
     }
 
     .menu-list {
@@ -236,8 +236,8 @@ body {
       justify-content: space-evenly;
       list-style-type: none;
       margin: 0;
-      padding: 0;  
-      text-align: center;    
+      padding: 0;
+      text-align: center;
 
       li {
         display: inline-block;
@@ -246,13 +246,12 @@ body {
         border-bottom: 1px solid black;
       }
     }
-
-  }   
+  }
 
   .clickable {
     cursor: pointer;
     width: fit-content;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     background: #555;
     color: #fff;
     border: 2px solid #555;
@@ -263,12 +262,12 @@ body {
     text-align: center;
     padding: 8px 16px;
     margin: 10px 0;
+    font-size: 12px;
 
     &:hover {
       background-color: #333;
       border-color: #333;
     }
-    
   }
 
   .image-wrapper {
@@ -278,7 +277,17 @@ body {
     img {
       width: auto;
       height: auto;
-      margin: 0 auto;  
+      margin: 0 auto;
     }
+  }
+}
+
+.wrapper {
+  position: relative;
+
+  .clickable-wrapper {
+    width: fit-content;
+    position: absolute;
+    left: 0;
   }
 }

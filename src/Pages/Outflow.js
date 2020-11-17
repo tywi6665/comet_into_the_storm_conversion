@@ -9,21 +9,29 @@ const Outflow = ({ setCurrentPage }) => {
     return (
         <SubContainer>
             <h3>Outflow</h3>
-            <ImageWrapper
-                src={!isToggled ? ("outflow_1") : ("outflow_2")}
-            />
-            <div>
-                <p
-                    className="clickable"
-                    onClick={() => setIsToggled(!isToggled)}
-                >
-                    {!isToggled ? ("Wire Frame Image") : ("Solid Image")} </p>
+            <div className="wrapper">
+                <ImageWrapper
+                    src={!isToggled ? ("outflow_1") : ("outflow_2")}
+                />
+                <div className="clickable-wrapper" style={{
+                    "bottom": "-23px",
+                }}>
+                    <p
+                        className="clickable"
+                        onClick={() => setIsToggled(!isToggled)}
+                    >
+                        {!isToggled ? ("Wire Frame Image") : ("Solid Image")} </p>
+                </div>
             </div>
-            <ol className="info-list">
-                <li>Air flowing out from the center of the storm (Outflow)</li>
-                <li>Air sinking into storm center, warming and suppressing clouds. Winds are calm</li>
-                <li>Cirrostratus clouds capping the storm</li>
-            </ol>
+            <div style={{
+                "marginTop": "25px"
+            }}>
+                <ol className="info-list">
+                    <li>Air flowing out from the center of the storm (Outflow)</li>
+                    <li>Air sinking into storm center, warming and suppressing clouds. Winds are calm</li>
+                    <li>Cirrostratus clouds capping the storm</li>
+                </ol>
+            </div>
             <p
                 className="clickable"
                 onClick={e => setCurrentPage("Main")}

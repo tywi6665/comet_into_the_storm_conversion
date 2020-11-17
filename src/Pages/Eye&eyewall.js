@@ -9,22 +9,30 @@ const Eye_Eyewall = ({ setCurrentPage }) => {
     return (
         <SubContainer>
             <h3>Eye & Eyewall</h3>
-            <ImageWrapper
-                src={!isToggled ? ("eyewall_1") : ("eyewall_2")}
-            />
-            <div>
-                <p
-                    className="clickable"
-                    onClick={() => setIsToggled(!isToggled)}
-                >
-                    {!isToggled ? ("Wire Frame Image") : ("Solid Image")} </p>
+            <div className="wrapper">
+                <ImageWrapper
+                    src={!isToggled ? ("eyewall_1") : ("eyewall_2")}
+                />
+                <div className="clickable-wrapper" style={{
+                    "bottom": "-23px",
+                }}>
+                    <p
+                        className="clickable"
+                        onClick={() => setIsToggled(!isToggled)}
+                    >
+                        {!isToggled ? ("Wire Frame Image") : ("Solid Image")} </p>
+                </div>
             </div>
-            <ol className="info-list">
-                <li>Eye: Light winds, partly cloudy or clear skies. Average diameters 20-50 km</li>
-                <li>Eyewall: Heaviest precipitation and strongest winds</li>
-                <li>Spiraling winds in eyewall</li>
-                <li>Sinking air</li>
-            </ol>
+            <div style={{
+                "marginTop": "25px"
+            }}>
+                <ol className="info-list">
+                    <li>Eye: Light winds, partly cloudy or clear skies. Average diameters 20-50 km</li>
+                    <li>Eyewall: Heaviest precipitation and strongest winds</li>
+                    <li>Spiraling winds in eyewall</li>
+                    <li>Sinking air</li>
+                </ol>
+            </div>
             <p
                 className="clickable"
                 onClick={e => setCurrentPage("Main")}

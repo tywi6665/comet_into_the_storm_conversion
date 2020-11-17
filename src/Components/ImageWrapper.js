@@ -4,7 +4,7 @@ const ImageWrapper = ({ src }) => {
 
     return (
         <div className="image-wrapper">
-            <img src={`./graphics/${src}.jpg`} alt="" />
+            <img src={`./images/${src}.jpg`} alt="" />
         </div>
     );
 }
